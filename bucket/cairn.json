@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0-RC01",
+  "description": "Architecture diagrams as code — typed views, semantic layout, overlap-free labels",
+  "homepage": "https://github.com/R0kshan/cairn",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/R0kshan/cairn/releases/download/v1.0.0-RC01/cairn-1.0.0-RC01-windows-x64.exe",
+      "hash": "3536b879ef832b4810c4e2a2b8b44ec004b828a36bd653ecf99bbe19c9f6da33"
+    }
+  },
+  "bin": [
+    [
+      "cairn-1.0.0-RC01-windows-x64.exe",
+      "cairn"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/R0kshan/cairn"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/R0kshan/cairn/releases/download/v$version/cairn-$version-windows-x64.exe"
+      }
+    }
+  }
+}
